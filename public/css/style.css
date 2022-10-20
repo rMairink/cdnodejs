@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a699bf;
+}
+
+.container {
+    width: 600px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #dacaf8;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.105);
+}
+
+.main h1 {
+    margin: 20px 0;
+    color: #b594f3
+}
+
+#form_posts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form_posts input[type="text"] {
+    width: 100%;
+    height: 45px;
+    margin: 20px 0;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 0 5px;
+    outline: 0;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+#form_posts textarea {
+    max-width: 100%;
+    min-width: 100%;
+    outline: 0;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    color: #333;
+}
+
+#form_posts button {
+    width: 100%;
+    margin: 20px 0;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    color: #7534ee;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.postagens_criadas{
+    width: 700px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.main_postagens{
+    width: 100%;
+    height: auto;;
+    background-color: #c5afde;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.main_postagens h1{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.main_postagens .postagens{
+    /* border: 1px solid #ccc; */
+    border-bottom: 1px solid #fff;
+    margin: 20px 0;
+    padding: 10px;
+    color: #eeeaea;
+}
+
+.postagens .postagem_titulo{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+.postagens .postagem_titulo P{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.postagens .postagem_conteudo{
+    width: 100%;
+    height: 100%;;
+    margin: 20px 0;
+}
+
+.postagens .postagem_conteudo p{
+    font-size: 1.7rem;
+}
+
+#deletePost{
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    font-size: 1.1rem;
+    color: #adadb1;
+}

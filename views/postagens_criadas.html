@@ -1,0 +1,16 @@
+<div class="postagens_criadas">
+    <div class="main_postagens">
+        <h1>Postagens Feitas</h1>
+        {{#each posts}}
+        <div class="postagens">
+            <div class="postagem_titulo">
+                <p>{{titulo}}</p>
+            </div>
+            <div class="postagem_conteudo">
+            <p>{{conteudo}}</p>
+            </div>
+            <a href="/deletar/{{id}}"><button id="deletePost">Deletar</button></a>
+        </div>
+        {{/each}}
+    </div>
+</div>
