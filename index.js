@@ -27,7 +27,7 @@ app.set('view engine', 'html')
 // Rotas
 
 app.get('/', (req, res) => {
-    res.send('Hello World')
+    res.render('form')
 })
 
 app.get('/criados', (req, res) => {
@@ -36,11 +36,6 @@ app.get('/criados', (req, res) => {
             posts: posts
         })
     })
-})
-
-
-app.get('/postagens', (req, res) => {
-    res.render('form')
 })
 
 app.post('/posts_criados', (req, res) => {
@@ -58,7 +53,7 @@ app.post('/posts_criados', (req, res) => {
 
 app.get('/deletar/:id', (req, res) => {
     Posts.destroy({where: {'id': req.params.id}}).then(() => {
-        res.send('Postagem Deletada')
+        res.redirect('/')
     }).catch((err) => {
         res.send('Erro: ' + err)
     })
